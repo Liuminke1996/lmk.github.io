@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>个人简介</title>
+  <link rel="stylesheet" href="css/jquery.fullPage.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+  <div class="main">
+    <div class="section" style="background-image: url(images/bg.jpg);">
+      <div id="particles"></div>
+      <div class="introduce">
+        <h1>个人介绍<span class="title-dec"> (来自一个帅到原地爆炸的男人...)</span></h1>
+        <div>
+          <img src="images/avator.jpg" alt="" width="100" height="100" class="avator">
+        </div>
+        <div class="intro-box">
+          <span class="left-title">姓名:</span><span class="right-intro">刘闵科</span>
+        </div>
+        <div class="intro-box">
+          <span class="left-title">学历:</span><span class="right-intro">大专</span>
+        </div>
+        <div class="intro-box">
+          <span class="left-title">年龄:</span><span class="right-intro">21岁</span>
+        </div>
+        <div class="intro-box">
+          <span class="left-title">状态:</span><span class="right-intro">离职</span>
+        </div>
+        <div class="intro-box">
+          <span class="left-title">职业 / 经验 / 薪资:</span>
+          <span class="right-intro">Web前端开发 / 2年 / 6-8k</span>
+        </div>
+        <div class="intro-box">
+          <span class="left-title">联系电话/邮箱/QQ:</span><span class="right-intro">18583291219</span>
+        </div>
+        <div class="intro-box">
+          <span class="left-title"></span><span class="right-intro">boom_lmk@sina.com</span>
+        </div>
+        <div class="intro-box">
+          <span class="left-title"></span><span class="right-intro">1056509662</span>
+        </div>
+      </div>  
+    </div>
+    <div class="section" style="background-image: url(http://dl.bizhi.sogou.com/images/1440x900/2014/12/17/1006646.jpg);">
+      <!-- 看书 || 快速浏览 -->
+      <div class="status">
+        <span data-status='book'>看书模式</span>
+        <span  class="status-active" data-status='quickly'>快速浏览模式</span>
+      </div>
+      <div id="book" class="look-box" style="display:none">
+        <!-- 看书 -->
+        <canvas id="pageflip-canvas"></canvas>
+        <div id="pages">
+          <section>
+            <div>
+              <h2>History1</h2>
+              <p>Canvas was initially introduced by Apple for use inside their own Mac OS X WebKit component, powering applications like Dashboard widgets and the Safari browser. Later, it was adopted by Gecko browsers and Opera and standardized by the WHATWG on new proposed specifications for next generation web technologies.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- 快速浏览 -->
+      <div class="rows look-box" id="quickly">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h3>第三屏</h3>
+      <p>圆圈还可以设置位置，颜色，加上 tip，点击可以控制</p>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/jquery.particleground.min.js"></script>
+<script type="text/javascript" src="js/pageflip.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $.fn.fullpage({
+      slidesColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+      navigationTooltips: ['基本资料','项目经验','自我评价'],
+      navigation: true
+    });
+    /* 首屏canvas粒子 */
+    $('#particles').particleground({
+      dotColor: '#5cbdaa',
+      lineColor: '#5cbdaa'
+    });
+    /* 快速阅读模式 */
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 30,
+        freeMode: true
+    });
+    //切换阅读模式
+    $(".status").on('click','span',function(){
+      $(this).addClass('status-active').siblings('span').removeClass('status-active');
+      var id= $(this).data('status');
+      $('#'+id).show().siblings('.look-box').hide()
+    })
+  });
+  </script>  
+</html>

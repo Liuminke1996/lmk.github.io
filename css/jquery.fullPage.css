@@ -1,0 +1,283 @@
+/**
+ * fullPage 1.4.5
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+#superContainer {
+    height: 100%;
+    position: relative;
+}
+.section {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.slide {
+    float: left;
+}
+.slide, .slidesContainer {
+    height: 100%;
+    display: block;
+}
+.slides {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.section.table, .slide.table {
+    display: table;
+    width: 100%;
+}
+.tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.slidesContainer {
+    float: left;
+    position: relative;
+}
+.controlArrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+}
+.controlArrow.prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.controlArrow.next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}
+.scrollable {
+    overflow: scroll;
+}
+.easing {
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+#fullPage-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+}
+#fullPage-nav.right,#fullPage-nav.left{
+    right: 17px;
+}
+.fullPage-slidesNav {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+}
+.fullPage-slidesNav.bottom {
+    bottom: 17px;
+}
+.fullPage-slidesNav.top {
+    top: 17px;
+}
+#fullPage-nav ul,
+.fullPage-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fullPage-nav li,
+.fullPage-slidesNav li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+.fullPage-slidesNav li {
+    display: inline-block;
+}
+#fullPage-nav li a,
+.fullPage-slidesNav li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fullPage-nav li .active span,
+.fullPage-slidesNav .active span {
+    width: 10px;
+    height: 10px;
+}
+#fullPage-nav span,
+.fullPage-slidesNav span {
+    width: 4px;
+    height: 4px;
+    background:white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s
+}
+.fullPage-tooltip {
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    top: -2px;
+}
+.fullPage-tooltip.right {
+    right: 20px;
+}
+.fullPage-tooltip.left {
+    left: 20px;
+}
+/*style css*/
+#particles{
+    background: rgba(0,0,0,0.2);
+    height: 100%;
+    text-align: center
+}
+.introduce{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    width: 500px;
+    text-align: center
+}
+.intro-box{
+    display: flex;
+    flex-flow: row;
+    margin-bottom:15px; 
+}
+.intro-box span{
+    flex: 1;
+    font-size: 18px;
+    text-align: left    
+}
+.intro-box .left-title{
+    text-align: right;
+    padding-right:20px
+}
+.title-dec{
+    font-size: 12px;
+}
+.avator{
+    border-radius: 50%;
+    margin:10px 0  20px
+}
+/*翻书效果*/
+#book {
+	background: url("../images/book.png") no-repeat;
+	position: absolute;
+	width: 830px;
+	height: 260px;
+	left: 50%;
+	top: 50%;
+	margin-left: -400px;
+	margin-top: -125px;
+}
+
+#pages section {
+	background: url("../images/paper.png") no-repeat;
+	display: block;
+	width: 400px;
+	height: 250px;
+	position: absolute;
+	left: 415px;
+	top: 5px;
+	overflow: hidden;
+}
+#pages section>div {
+    display: block;
+    width: 400px;
+    height: 250px;
+    font-size: 12px;
+}
+#pages section p,
+#pages section h2 {
+    padding: 3px 35px;
+    line-height: 1.4em;
+    text-align: justify;
+}
+#pages section h2{
+    margin: 15px 0 10px;
+}
+#pageflip-canvas {
+	position: absolute;
+	z-index: 100;
+}
+.rows{
+    width: 1200px;
+    margin: 0 auto;
+    height: 500px
+}
+.swiper-container {
+    width: 100%;
+    height:100%;
+}
+.swiper-slide{
+    background: rgba(0,0,0,0.4);
+    color: white;
+}
+.swiper-container .swiper-pagination .swiper-pagination-bullet-active{
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 3px;
+}
+.swiper-pagination .swiper-pagination-bullet{
+    width: 4px;
+    height: 4px;
+    border: none;
+    background: white;
+    opacity: 1;
+}
+.status{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white
+}
+.status span{
+    display: inline-block;
+    padding:10px 20px;
+    line-height: 1;
+    cursor: pointer;    
+}
+.status-active{
+    border-radius: 3px;
+    background: -webkit-linear-gradient(left, rgba(206, 165, 165, 0.62) , rgba(220, 140, 140, 0.09))); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgba(206, 165, 165, 0.62) , rgba(220, 140, 140, 0.09))); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgba(206, 165, 165, 0.62) , rgba(220, 140, 140, 0.09))); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgba(206, 165, 165, 0.62) , rgba(220, 140, 140, 0.09)); /* 标准的语法（必须放在最后） */
+}
