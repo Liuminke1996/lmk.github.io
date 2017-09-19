@@ -7,6 +7,7 @@
   <title>个人简介</title>
   <link rel="stylesheet" href="css/jquery.fullPage.css">
   <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/typing.css">
 </head>
 <body>
   <div class="main">
@@ -48,8 +49,8 @@
       <!-- 看书 || 快速浏览 -->
       <h1 class="project-title">项目经验</h1>
       <div class="status">
-        <span data-status='book'>看书模式</span>
-        <span  class="status-active" data-status='quickly'>快速浏览模式</span>
+        <span data-status="book">看书模式</span>
+        <span  class="status-active" data-status="quickly">快速浏览模式</span>
       </div>
       <div id="book" class="look-box" style="display:none">
         <!-- 看书 -->
@@ -57,20 +58,99 @@
         <div id="pages">
           <section>
             <div>
-              <h2>History1</h2>
-              <p>Canvas was initially introduced by Apple for use inside their own Mac OS X WebKit component, powering applications like Dashboard widgets and the Safari browser. Later, it was adopted by Gecko browsers and Opera and standardized by the WHATWG on new proposed specifications for next generation web technologies.</p>
+              <h2>亚丁直播</h2>
+              <p>责任描述:负责前端所有页面及项目逻辑整理及开发,负责追踪前端进度和遇到的难点,负责模块化开发,
+                使用webpack打包工具打包,对逻辑代码进行解耦,函数代码不超过10行以上,尽量达到低耦合高复用
+              </p>
+              <p>项目简介:
+                  该项目是一个老年直播平台,专为老年人设计,
+                  主要功能有:刷礼物/传视频/评论/点赞/转发分享朋友圈/实时聊天/视频直播等(视频直播和socket通讯所有方法由第三方提供)
+              </p>
             </div>
           </section>
           <section>
             <div>
-              <h2>History2</h2>
-              <p>Canvas was initially introduced by Apple for use inside their own Mac OS X WebKit component, powering applications like Dashboard widgets and the Safari browser. Later, it was adopted by Gecko browsers and Opera and standardized by the WHATWG on new proposed specifications for next generation web technologies.</p>
+              <h2>watch</h2>
+              <p>责任描述:负责前端所有页面及项目逻辑整理及开发,负责追踪前端进度和遇到的难点,负责模块化开发,
+                使用webpack打包工具打包,对逻辑代码进行解耦,函数代码不超过10行以上,尽量达到低耦合高复用,
+                根据设计图还原页面并完成效果交互,负责和ios、android配合封装hybrid
+              </p>
+              <p>实现功能：登录、创建成员、查询心率、血压、记步等，统计日月年数据，定位，设置智能围栏范围，查询家庭成员，sos报警，拨打电话等
+                  使用framework7框架完成单页应用
+                  使用JQuery
+                  使用EChart做图表统计
+                  负责和ios/安卓对接，完成拨打电话，扫描二维码等功能</p>
             </div>
           </section>
           <section>
             <div>
-              <h2>History3</h2>
-              <p>Canvas was initially introduced by Apple for use inside their own Mac OS X WebKit component, powering applications like Dashboard widgets and the Safari browser. Later, it was adopted by Gecko browsers and Opera and standardized by the WHATWG on new proposed specifications for next generation web technologies.</p>
+              <h2>点单系统(Vue)</h2>
+              <p>责任描述:负责前端所有页面及项目逻辑整理及开发,负责追踪前端进度和遇到的难点,负责模块化开发,
+                使用webpack打包工具打包,对逻辑代码进行解耦,函数代码不超过10行以上,尽量达到低耦合高复用,
+                根据设计图还原页面并完成效果交互,负责整理SPA路由跳转
+              </p>
+              <p>实现功能：新用户引导页、权限检测、登陆检测、选择座位、选择酒水等点单功能</p>
+              <p>
+                  受益：对模块化组件化有更深的理解、对css3动画更加熟练、更加熟练数据驱动渲染
+              </p>
+            </div>
+          </section>
+          <section>
+            <div>
+              <h2>慧有钱平台</h2>
+              <p>责任描述:独立完成所有前端逻辑,使用JQuery和ArtTemplate前端模板引擎调用后台接口并渲染,
+                  兼容性测试(主流浏览器及用户常用浏览器如:qq浏览器、搜狗、360浏览器等),
+                  根据UI标注完美的做好细节优化且误差不超过2px,
+                  根据设计图还原页面并完成效果交互
+              </p>
+              <p>实现功能：该项目分为讲师经销商厂商三个角色,讲师可以在平台填写他的基本资料
+              ,简历等,并上传视频文章照片等进行展示,主要功能是上传数据然后展示在app</p>
+            </div>
+          </section>
+          <section>
+            <div>
+              <h2>三餐快点</h2>
+              <p>责任描述:和同事配合完成前端逻辑,使用JQuery和ArtTemplate前端模板引擎调用后台接口并渲染,
+                  和app端配合封装hybrid壳子,内嵌webview制作app
+              </p>
+              <p>实现功能：实现功能：分为app端和微信端，角色分为店家/服务员/消费者
+                  一个店铺可以绑定多个服务员并进行受理订单传到后厨划菜
+                  消费者可以通过扫描桌进行台二维码下单，
+                  也可以通过语音说话进行下单，该项目主要为堂吃订单服务(语音技术由科大讯飞提供,应用商店搜索三餐快点)
+              </p>
+            </div>
+          </section>
+          <section>
+            <div>
+              <h2>三餐服务商</h2>
+              <p>责任描述:根据产品原型图构思前端界面效果,使用JQuery和ArtTemplate前端模板引擎调用后台接口并渲染,
+                  和app端配合封装hybrid壳子,内嵌webview制作app
+              </p>
+              <p> 实现功能：该项目是服务于中小型创业者，拥有庞大的客户池集成，用户可以在客户池挑选客户， 并且对客户进行挖掘，
+                  拥有：经济收益统计/客户池/盟主统筹接单/平台链等几大功能(应用商店搜索三餐服务商)
+              </p>
+            </div>
+          </section>
+          <section>
+            <div>
+              <h2>三餐点餐</h2>
+              <p>责任描述:根据产品原型图构思前端界面效果,使用JQuery和ArtTemplate前端模板引擎调用后台接口并渲染,
+                  基于微信开发,并授权登陆微信等第三方登陆方式
+              </p>
+              <p> 实现功能：该项目为类似于美团饿了么类的外卖平台,
+                  基于微信开发,实现点餐付款,评分,评论卡包,打折等功能(微信关注公众号三餐美食查看)
+              </p>
+            </div>
+          </section>
+          <section>
+            <div>
+              <h2>三餐助手</h2>
+              <p>责任描述:根据产品原型图构思前端界面效果,使用JQuery和ArtTemplate前端模板引擎调用后台接口并渲染,
+                  使用apicloud编写app
+              </p>
+              <p> 实现功能：该项目为没有电脑的店家准备，实现实时接单，app推送，分发配送池，修改店铺信息，
+                  查看信订单息等一系列功能，具有无线蓝牙打印功能使店家方便接单受理订单(应用商店搜索三餐助手)
+              </p>
             </div>
           </section>
         </div>
@@ -81,53 +161,178 @@
           <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="sw-project">
-                  <p class="pro-box">项目名称: 亚丁直播<small> 2017/05 - 2017/09</small></p>
+                  <p class="pro-box">项目名称: 亚丁直播</p>
                   <p class="pro-box">责任描述:</p>
+                  <p class="dec-box">1.负责前端所有页面及项目逻辑整理及开发</p>
+                  <p class="dec-box">2.负责追踪前端进度和遇到的难点</p>
+                  <p class="dec-box">3.负责模块化开发,使用webpack打包工具打包</p>
+                  <p class="dec-box">4.对逻辑代码进行解耦,函数代码不超过10行以上,尽量达到低耦合高复用</p>
+                  <p class="pro-box">项目简介:</p>
                   <p class="dec-box">
-                    
+                      该项目是一个老年直播平台,专为老年人设计,
+                      主要功能有:刷礼物/传视频/评论/点赞/转发分享朋友圈/实时聊天/视频直播等(视频直播和socket通讯所有方法由第三方提供)
                   </p>
                 </div>
               </div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">
+                <div class="sw-project">
+                  <p class="pro-box">项目名称: watch</p>
+                  <p class="pro-box">责任描述:</p>
+                  <p class="dec-box">1.负责前端所有页面及项目逻辑整理及开发</p>
+                  <p class="dec-box">2.负责追踪前端进度和遇到的难点</p>
+                  <p class="dec-box">3.负责模块化开发,使用webpack打包工具打包</p>
+                  <p class="dec-box">4.对逻辑代码进行解耦,函数代码不超过10行以上,尽量达到低耦合高复用</p>
+                  <p class="dec-box">5.根据设计图还原页面并完成效果交互</p>
+                  <p class="dec-box">6.负责和ios、android配合封装hybrid</p>
+                  <p class="pro-box">项目简介:</p>
+                  <p class="dec-box">
+                    实现功能：登录、创建成员、查询心率、血压、记步等，统计日月年数据，定位，设置智能围栏范围，查询家庭成员，sos报警，拨打电话等
+                    使用framework7框架完成单页应用
+                    使用JQuery
+                    使用EChart做图表统计
+                    负责和ios/安卓对接，完成拨打电话，扫描二维码等功能
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sw-project">
+                  <p class="pro-box">项目名称:点单系统(Vue)</p>
+                  <p class="pro-box">责任描述:</p>
+                  <p class="dec-box">1.负责前端所有页面及项目逻辑整理及开发</p>
+                  <p class="dec-box">2.负责追踪前端进度和遇到的难点</p>
+                  <p class="dec-box">3.负责组件模块化开发(vue-cli),使用webpack打包工具打包</p>
+                  <p class="dec-box">4.对逻辑代码进行解耦,函数代码不超过10行以上,尽量达到低耦合高复用</p>
+                  <p class="dec-box">5.根据设计图还原页面并完成效果交互</p>
+                  <p class="dec-box">6.负责整理SPA路由跳转</p>
+                  <p class="pro-box">项目简介:</p>
+                  <p class="dec-box">
+                    实现功能：新用户引导页、权限检测、登陆检测、选择座位、选择酒水等点单功能
+                  </p>
+                  <p class="dec-box">
+                    受益：对模块化组件化有更深的理解、对css3动画更加熟练、更加熟练数据驱动渲染
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sw-project">
+                  <p class="pro-box">项目名称:慧有钱平台</p>
+                  <p class="pro-box">责任描述:</p>
+                  <p class="dec-box">1.独立完成所有前端逻辑</p>
+                  <p class="dec-box">2.使用JQuery和ArtTemplate前端模板引擎调用后台接口并渲染</p>
+                  <p class="dec-box">3.兼容性测试(主流浏览器及用户常用浏览器如:qq浏览器、搜狗、360浏览器等)</p>
+                  <p class="dec-box">4.根据UI标注完美的做好细节优化且误差不超过2px</p>
+                  <p class="dec-box">5.根据设计图还原页面并完成效果交互</p>
+                  <p class="pro-box">项目简介:</p>
+                  <p class="dec-box">
+                    实现功能：该项目分为讲师经销商厂商三个角色,讲师可以在平台填写他的基本资料
+                    ,简历等,并上传视频文章照片等进行展示,主要功能是上传数据然后展示在app
+                  </p>
+                  <p class="dec-box">
+                    链接:<a href="http://www.hskj999.com">前往查看</a>   
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sw-project">
+                  <p class="pro-box">项目名称:三餐快点</p>
+                  <p class="pro-box">责任描述:</p>
+                  <p class="dec-box">1.和同事配合完成前端逻辑</p>
+                  <p class="dec-box">2.使用JQuery和ArtTemplate前端模板引擎调用后台接口并渲染</p>
+                  <p class="dec-box">3.和app端配合封装hybrid壳子,内嵌webview制作app</p>
+                  <p class="pro-box">项目简介:</p>
+                  <p class="dec-box">
+                    实现功能：分为app端和微信端，角色分为店家/服务员/消费者
+                    一个店铺可以绑定多个服务员并进行受理订单传到后厨划菜
+                    消费者可以通过扫描桌进行台二维码下单，
+                    也可以通过语音说话进行下单，该项目主要为堂吃订单服务(语音技术由科大讯飞提供,应用商店搜索三餐快点)
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sw-project">
+                  <p class="pro-box">项目名称:三餐服务商</p>
+                  <p class="pro-box">责任描述:</p>
+                  <p class="dec-box">1.根据产品原型图构思前端界面效果</p>
+                  <p class="dec-box">2.使用JQuery和ArtTemplate前端模板引擎调用后台接口并渲染</p>
+                  <p class="dec-box">3.和app端配合封装hybrid壳子,内嵌webview制作app</p>
+                  <p class="pro-box">项目简介:</p>
+                  <p class="dec-box">
+                    实现功能：该项目是服务于中小型创业者，拥有庞大的客户池集成，用户可以在客户池挑选客户， 并且对客户进行挖掘，
+                    拥有：经济收益统计/客户池/盟主统筹接单/平台链等几大功能(应用商店搜索三餐服务商)
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sw-project">
+                  <p class="pro-box">项目名称:三餐点餐</p>
+                  <p class="pro-box">责任描述:</p>
+                  <p class="dec-box">1.根据产品原型图构思前端界面效果</p>
+                  <p class="dec-box">2.使用JQuery和ArtTemplate前端模板引擎调用后台接口并渲染</p>
+                  <p class="dec-box">3.基于微信开发,并授权登陆微信等第三方登陆方式</p>
+                  <p class="pro-box">项目简介:</p>
+                  <p class="dec-box">
+                    实现功能：该项目为类似于美团饿了么类的外卖平台,
+                    基于微信开发,实现点餐付款,评分,评论卡包,打折等功能(微信关注公众号三餐美食查看)
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sw-project">
+                  <p class="pro-box">项目名称:三餐助手</p>
+                  <p class="pro-box">责任描述:</p>
+                  <p class="dec-box">1.根据产品原型图构思前端界面效果</p>
+                  <p class="dec-box">2.使用JQuery和ArtTemplate前端模板引擎调用后台接口并渲染</p>
+                  <p class="dec-box">3.使用apicloud编写app</p>
+                  <p class="pro-box">项目简介:</p>
+                  <p class="dec-box">
+                    实现功能：该项目为没有电脑的店家准备，实现实时接单，app推送，分发配送池，修改店铺信息，
+                      查看信订单息等一系列功能，具有无线蓝牙打印功能使店家方便接单受理订单(应用商店搜索三餐助手)
+                  </p>
+                </div>
+              </div>
           </div>
           <!-- Add Pagination -->
           <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
-    <div class="section">
-      <h1 class="project-title">专业技能及自我评价</h1>
-      <div class="rows skill-box">
-        <div class="flex-box">
-          <h2 class="second-title">专业技能</h2>
-          <div class="dec-box">
-            <p>1.熟悉JavaScript基础语法、</p>
-            <p>2.常使用vue、jqurey、zpeto等框架、</p>
-            <p>3.熟悉webpack打包工具、</p>
-            <p>4.熟练使用echarts，地图api等常用api、</p>
-            <p>5.熟练使用HTML+CSS编写静态网页、</p>
-            <p>6.熟悉DOM、BOM节点操作、</p>
-            <p>7.熟悉前后端交互、</p>
-            <p>8.对双向数据绑定模块化有所理解</p>
-          </div>
-        </div>
-        <div class="flex-box">
-            <h2 class="second-title">自我评价</h2>
+    <div class="section" style="background-image: url(http://4493bz.1985t.com/uploads/allimg/140930/4-140930105958.jpg);">
+      <div class="bg-opacity">
+        <h1 class="project-title">专业技能及自我评价</h1>
+        <div class="rows skill-box">
+          <div class="flex-box source" id="source0" style="display:none">
+            <h2 class="second-title">专业技能</h2>
             <div class="dec-box">
-              <p>1.喜欢学习研究前端新技术</p>
-              <p>2.喜欢在错误中找到自己的不足，越战越勇，快速定位问题加以改正</p>
-              <p>3.考虑事情从多面性考虑 </p>
-              <p>4.熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题</p>
-              <p>5.熟练使用flex/rem等手机端常用布局方式</p>
-              <p>6.熟练使用mui/framework7等ui框架</p>
-              <p>7.对工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作</p>
+              <p>1.熟悉JavaScript基础语法、</p>
+              <p>2.常使用vue、jqurey、zpeto等框架、</p>
+              <p>3.熟悉webpack打包工具、</p>
+              <p>4.熟练使用echarts，地图api等常用api、</p>
+              <p>5.熟练使用HTML+CSS编写静态网页、</p>
+              <p>6.熟悉DOM、BOM节点操作、</p>
+              <p>7.熟悉前后端交互、</p>
+              <p>8.对双向数据绑定模块化有所理解</p>
             </div>
+          </div>
+          <div class="flex-box">
+            <div id="output0"></div>
+            <span class="typing-cursor-white">|</span>
+          </div>
+          <div class="flex-box source" id="source1" style="display:none">
+              <h2 class="second-title">自我评价</h2>
+              <div class="dec-box">
+                <p>1.喜欢学习研究前端新技术</p>
+                <p>2.喜欢在错误中找到自己的不足，越战越勇，快速定位问题加以改正</p>
+                <p>3.考虑事情从多面性考虑 </p>
+                <p>4.熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题</p>
+                <p>5.熟练使用flex/rem等手机端常用布局方式</p>
+                <p>6.熟练使用mui/framework7等ui框架</p>
+                <p>7.对工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作</p>
+              </div>
+          </div>
+          <div class="flex-box">
+            <div id="output1"></div>
+            <span class="typing-cursor-white">|</span>
+          </div>
         </div>
       </div>
     </div>
@@ -139,12 +344,21 @@
 <script src="js/jquery.particleground.min.js"></script>
 <script type="text/javascript" src="js/pageflip.js"></script>
 <script src="js/swiper.min.js"></script>
+<script src="js/typing.js"></script>
 <script>
+  var flag=true;
   $(document).ready(function() {
     $.fn.fullpage({
       slidesColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
       navigationTooltips: ['基本资料','项目经验','自我评价'],
-      navigation: true
+      navigation: true,
+      onLeave:function(index,nextIndex,direction ){
+        if(index==2){
+          /* 如果下标为2那么则执行typed,防止重复执行该方法,所以设置flag限制*/
+          typed();
+          flag=false;
+        }
+      }
     });
     /* 首屏canvas粒子 */
     $('#particles').particleground({
@@ -165,6 +379,20 @@
       var id= $(this).data('status');
       $('#'+id).show().siblings('.look-box').hide()
     })
+    
   });
+  function typed(){
+    /* 打字效果 */
+    if(flag){
+      $('.source').each(function(index){
+        var typing = new Typing({
+          source: document.getElementById('source'+index),
+          output: document.getElementById('output'+index),
+          delay: 50
+        });
+        typing.start();
+      })
+    }
+  }
   </script>  
 </html>
