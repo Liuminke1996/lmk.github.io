@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>个人简介</title>
+  <link rel="icon" type="image/x-icon" href="images/l.jpg">
   <link rel="stylesheet" href="css/jquery.fullPage.css">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/typing.css">
@@ -12,7 +13,7 @@
 </head>
 <body>
   <div class="main">
-    <div class="section" style="background: url(images/bg.jpg) no-repeat;">
+    <div class="section" style="background: url(images/bg.jpg) no-repeat;background-size: 100% 100%">
       <div id="particles"></div>
       <div class="introduce">
         <h1 class="animated bounceInDown">个人介绍<span class="title-dec"> (来自一个帅到原地爆炸的男人...)</span></h1>
@@ -47,9 +48,9 @@
         </div>
       </div>  
     </div>
-    <div class="section" style="background: url(http://dl.bizhi.sogou.com/images/1680x1050/2015/01/08/1037179.jpg) no-repeat;">
+    <div class="section" style="background: url(http://dl.bizhi.sogou.com/images/1680x1050/2015/01/08/1037179.jpg) no-repeat;background-size: 100% 100%">
       <!-- 看书 || 快速浏览 -->
-      <h1 class="project-title animated">项目经验</h1>
+      <h1 class="project-title">项目经验</h1>
       <div class="status">
         <span data-status="book">看书模式</span>
         <span  class="status-active" data-status="quickly">快速浏览模式</span>
@@ -298,9 +299,9 @@
         </div>
       </div>
     </div>
-    <div class="section" style="background: url(http://4493bz.1985t.com/uploads/allimg/140930/4-140930105958.jpg) no-repeat;">
+    <div class="section" style="background: url(http://4493bz.1985t.com/uploads/allimg/140930/4-140930105958.jpg) no-repeat; background-size: 100% 100%">
       <div class="bg-opacity">
-        <h1 class="project-title hided" style="display:none">专业技能及自我评价</h1>
+        <h1 class="project-title">专业技能及自我评价</h1>
         <div class="rows skill-box">
           <div class="flex-box source" id="source0" style="display:none">
             <h2 class="second-title">专业技能</h2>
@@ -354,12 +355,11 @@
       slidesColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
       navigationTooltips: ['基本资料','项目经验','自我评价'],
       navigation: true,
-      onLeave:function(index,nextIndex,direction ){ 
+      onLeave:function(index,nextIndex,direction ){
         if(index==2){
           /* 如果下标为2那么则执行typed,防止重复执行该方法,所以设置flag限制*/
           typed();
           flag=false;
-          $(".hided").show();
         }
       }
     });
